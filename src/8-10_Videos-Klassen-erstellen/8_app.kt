@@ -1,4 +1,7 @@
 // Einfache Klassen
+import `8-10_Videos-Klassen-erstellen`.Flasche
+import `8-10_Videos-Klassen-erstellen`.Glas
+
 
 // Aus diesen If-Statements Klassen erstellen...
 /*  vorheriges If-Statement in Funktionen abbilden
@@ -44,13 +47,13 @@ fun main() {
 
     // Flasche
     // var inhaltFlasche : Int = 800
-//    flasche.inhalt = 500
+    // flasche.inhalt = 500
 
 
     // obj von der class Glas
     val glas1 = Glas(40, 150)
     // Glas 1
-//    var inhaltGlas1 = 40
+    // var inhaltGlas1 = 40
     //val maxInhaltGlas1 = 150
 
     val glas2 = Glas(90, 200)
@@ -68,5 +71,6 @@ fun main() {
 } // fun main
 
 // class Glas
-class Glas(var inhalt: Int, val maxInhalt: Int)
-class Flasche(var inhalt: Int)
+// siehe class Glass file
+// class Glas(var inhalt: Int, val maxInhalt: Int)
+// class Flasche(var inhalt: Int)
