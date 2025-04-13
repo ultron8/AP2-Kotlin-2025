@@ -1,4 +1,4 @@
-package `11-16_Videos-Klassen-mit-Eigenschaften-und-Methoden`
+package `3_11-16_Videos-Klassen-mit-Eigenschaften-und-Methoden`
 
 // Array Lists
 
@@ -111,7 +111,7 @@ fun calculateFillAmount(mengeFlasche : Int , mengeGlas : Int , maxMengeGlas : In
 
 // Funktion umfuellen hat kein Rückgabewert daher -> : Unit
 
-fun refill(flasche: `8-10_Videos-Klassen-erstellen`.Flasche, glas: `8-10_Videos-Klassen-erstellen`.Glas) {
+fun refill(flasche: `2_8-10_Videos-Klassen-erstellen`.Flasche, glas: `2_8-10_Videos-Klassen-erstellen`.Glas) {
 
     val umfuellMenge = calculateFillAmount(flasche.inhalt, glas.inhalt, glas.maxInhalt)
 

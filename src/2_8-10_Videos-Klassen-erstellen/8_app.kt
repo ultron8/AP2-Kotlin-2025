@@ -1,6 +1,6 @@
 // Einfache Klassen
-import `8-10_Videos-Klassen-erstellen`.Flasche
-import `8-10_Videos-Klassen-erstellen`.Glas
+import `2_8-10_Videos-Klassen-erstellen`.Flasche
+import `2_8-10_Videos-Klassen-erstellen`.Glas
 
 
 // Aus diesen If-Statements Klassen erstellen...
