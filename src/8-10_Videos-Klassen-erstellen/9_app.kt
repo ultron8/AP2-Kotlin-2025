@@ -54,4 +54,4 @@ fun refill(flasche: Flasche, glas: Glas) {
     flasche.inhalt -= umfuellMenge
     // Lösung: erstellen von Klassen...
 
-} // fun refilla
+} // fun refill
