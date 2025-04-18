@@ -30,7 +30,7 @@ class Flasche2 ( var inhalt: Int ) {
 
 
     // fun umfuellen()
-    fun refill(glas: Glas2) {
+    fun refill(glas: Glas2): Int {
         var umfuellMenge = glas.availableSpace()
         if (this.inhalt < umfuellMenge ) {
             umfuellMenge = this.inhalt
@@ -41,7 +41,7 @@ class Flasche2 ( var inhalt: Int ) {
         // im Glas dann die umfuellMenge hinzufügen
         glas.inhalt = glas.inhalt + umfuellMenge
 
-
+        return glas.inhalt
     }
 } // class Flasche
 
@@ -52,8 +52,11 @@ fun main(){
     val glas2 = Glas2 ( 90 , 200 )
 
 
-    niceFlasche.refill(glas1)
-    niceFlasche.refill(glas2)
+    var test1 = niceFlasche.refill(glas1)
+    var test2 = niceFlasche.refill(glas2)
+
+    println(test1)
+    println(test2)
 
 
 
