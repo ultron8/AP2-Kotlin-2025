@@ -19,9 +19,9 @@ Legende:
 
 ## Lerninhalte
 
-- Schnelleinstieg Kotlin (Kapitel 1) 📍
+- Schnelleinstieg Kotlin (Kapitel 1) 
 - Klassen erstellen (Kapitel 2)
-- Klassen mit Eigenschaften und Methoden (Kapitel 3)
+- Klassen mit Eigenschaften und Methoden (Kapitel 3) 📍
 - Schleifen und Codeverbesserung (Kapitel 4)
 - Vererbung und Polymorphie (Kapitel 5)
 - Typen und Objekte (Kapitel 6)
