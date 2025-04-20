@@ -1,3 +1,5 @@
+// fun main von der game-libary
+
 import de.th_koeln.basicstage.Actor
 import de.th_koeln.basicstage.Stage
 
