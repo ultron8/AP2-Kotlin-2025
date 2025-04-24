@@ -7,9 +7,7 @@ import de.th_koeln.imageprovider.Assets
 import kotlin.random.Random
 
 
-//class SnackActor(): Actor() {
-//
-//}
+// I HAD SOME STRUGGLES HERE
 
 
 fun main() {
