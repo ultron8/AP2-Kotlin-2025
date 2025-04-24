@@ -5,6 +5,11 @@ import de.th_koeln.imageprovider.Assets
 import kotlin.random.Random
 
 
+data class SnackActor(
+    val actor: Actor,
+    val filename: String
+)
+
 
 fun main() {
 
@@ -33,8 +38,6 @@ fun main() {
     )
 
 
-
-
     var ateSnacksCounter = 0
 
     val display = Actor()
@@ -48,19 +51,30 @@ fun main() {
 
     stage.addActor(display)
 
+    // new mutable List of Actor
+    val allSnacks = mutableListOf<SnackActor>()  // Place this at the top of main(), before the loop
 
-
+    // FOR LOOP
     for (snackAsset in snackActorLists) {
 
         var randomStageWidth = Random.nextInt(stage_w)
         var randomStageHeight = Random.nextInt(stage_h)
 
+        // snackAsset ist eine String-Referenz
         val snackActor = Actor(snackAsset)
+        // erstellen ein object von der data class SnackActor und übergeben actor und filename
+        val snack = SnackActor(snackActor, snackAsset)
+        // hier übergeben wir der mutableList allSnacks -> objects von snack : SnackActor
+        allSnacks.add(snack)
+        //println("ALL SNACKS: $allSnacks")
+
+
+
 
         snackActor.x = randomStageWidth
         snackActor.y = randomStageHeight
 
-
+        // Animation
         snackActor.reactionForMousePressed = {
 
             val myAnimation = PropertyAnimationValueChange (
@@ -99,13 +113,25 @@ fun main() {
 
         stage.addActor(snackActor)
 
-        val allSnacks = mutableListOf<Actor> ()
-        allSnacks.add(snackActor)
-        println("All snacks: $allSnacks")
+
 
     } // for loop
 
-    // AUFGABE 2
+    // Output sortedSnacks
+    // anschließend rufen wir die Funktion auf und übergeben die Liste all Snacks
+        // welche wir vorab mit snacks : SnackActor aufgefüllt hatten
+    val sortedSnacks = snacksSortList(allSnacks)
+
+    println("📦 Sorted Snacks by filename:")
+    for (snack in sortedSnacks) {
+        println(snack.filename)
+    }
+
 
 } // fun main
+
+// hier wird die Liste alphabetisch nach den val filenames in SnackActor sortiert
+fun snacksSortList(snacksParam: List<SnackActor>): List<SnackActor> {
+    return snacksParam.sortedBy { it.filename }
+}
 
