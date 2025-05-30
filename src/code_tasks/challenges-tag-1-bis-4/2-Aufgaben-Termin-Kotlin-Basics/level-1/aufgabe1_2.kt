@@ -1,0 +1,1 @@
+class Health(var energy: Int, var fitness: Int)
