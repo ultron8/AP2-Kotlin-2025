@@ -12,6 +12,7 @@ fun main() {
     val ultronRobot = Actor(Assets.robot.ACTION)
     ultronRobot.y = 500
     ultronRobot.x = 500
+
     // weiteren Actor hinzufügen
     val kodeeE = Actor(Assets.kodee.ELECTRIFIED)
     // Ausgngsposition von kodeeE ändern
@@ -26,6 +27,7 @@ fun main() {
         ultronRobot.rotation = 30
         ultronRobot.width = 200
         ultronRobot.height = 200
+        // Geschwindigkeit des Actors anpassen
         ultronRobot.motion.speed = 10
         ultronRobot.motion.direction = 360
     }

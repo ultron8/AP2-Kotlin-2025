@@ -57,8 +57,8 @@ fun main() {
     // FOR LOOP
     for (snackAsset in snackActorLists) {
 
-        var randomStageWidth = Random.nextInt(stage_w)
-        var randomStageHeight = Random.nextInt(stage_h)
+        var randomStageWidth = Random.nextInt(stage_w) // random stage num between 0 - 800
+        var randomStageHeight = Random.nextInt(stage_h) // random stage num between 0 - 600
 
         // snackAsset ist eine String-Referenz
         val snackActor = Actor(snackAsset)
@@ -71,8 +71,8 @@ fun main() {
 
 
 
-        snackActor.x = randomStageWidth
-        snackActor.y = randomStageHeight
+        snackActor.x = randomStageWidth // random stage num 0 - 800 for a SnackActor
+        snackActor.y = randomStageHeight // random stage num 0 - 600 for a SnackActor
 
         // Animation
         snackActor.reactionForMousePressed = {
@@ -95,9 +95,9 @@ fun main() {
             ateSnacksCounter++
             display.text.content = "Anzahl Snacks: $ateSnacksCounter"
             if (ateSnacksCounter == 4) {
-                display.text.content = "Anzahl Snacks: $ateSnacksCounter \nIch bin satt"
+                display.text.content = "Ich bin satt"
 
-
+                // rotate kodeE
                 val rotateAnimationKodeE = PropertyAnimationValueChange(
                     _start = 0,
                     _end = 500,
@@ -122,7 +122,7 @@ fun main() {
         // welche wir vorab mit snacks : SnackActor aufgefüllt hatten
     val sortedSnacks = snacksSortList(allSnacks)
 
-    println("📦 Sorted Snacks by filename:")
+    println("📦Sorted Snacks by filename:")
     for (snack in sortedSnacks) {
         println(snack.filename)
     }

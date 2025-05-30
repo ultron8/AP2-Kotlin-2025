@@ -9,7 +9,7 @@ fun main() {
     val stage = Stage()
 
     // different actors
-    val actor = Actor()
+//    val actor = Actor()
     val kodee = Actor(Assets.KODEE)
     val kodeeE = Actor(Assets.kodee.ELECTRIFIED)
     val monster1 = Actor(Assets.monster.MONSTER1)

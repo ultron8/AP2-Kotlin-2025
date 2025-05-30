@@ -37,9 +37,11 @@ fun main() {
         var randomStageWidth = Random.nextInt(stage_w)
         var randomStageHeight = Random.nextInt(stage_h)
 
+        // einzelnen Werte aus dem Iterator als Actor erstellen damit diese auf der Stage() angezeigt werden können
         val snackActor = Actor(snackAsset)
 
         // Optional: Setze eine Position, z.B. nebeneinander mit Abstand
+        // random generierte Positionen für x und y
         snackActor.x = randomStageWidth
         snackActor.y = randomStageHeight
 

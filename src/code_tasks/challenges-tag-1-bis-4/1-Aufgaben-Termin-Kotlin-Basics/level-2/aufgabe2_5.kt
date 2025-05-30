@@ -46,6 +46,7 @@ fun main() {
     val stage_h = WorldConstants.STAGE_HEIGHT
 
     // Order the snacks must be eaten in:
+    // alphabetical
     val expectedSnackOrder = listOf(
         Assets.snacks.DONUT1,
         Assets.snacks.CUPCAKE1,
@@ -124,4 +125,4 @@ fun main() {
         // Optional: reset if all are invisible (not required by you yet)
     }
 
-}
+} // fun main
